@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--DataSource:使用Spring的数据源替换mybatis的配置
+       这里使用Spring提供的JDBC
+       -->
+    <!--jdbc需要导Spring的包-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis?userSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+
+    <!--sqlSessionFactory-->
+    <!--mybatis方法文档有-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--绑定Mybatis配置文件-->
+        <!--configLocation：mybatis配置文件的地址-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!--注册映射器-->
+        <property name="mapperLocations" value="classpath:com/rzk/mapper/*.xml"/>
+    </bean>
+
+    <!--创建sqlSessionFactory    SqlSessionTemplate:就是我们使用的SqlSessionFactory -->
+    <!--constructor里面的ref sqlSessionFactory是对应上面bean的id-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+
+</beans>

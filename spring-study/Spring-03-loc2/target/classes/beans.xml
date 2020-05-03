@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="User" class="com.rzk.pojo.User">
+<!--        <property name="name" value="芮祝楷"/>-->
+<!--        <constructor-arg index="0" value="睿智楷"/> 第一种下标赋值-->
+
+        <!--第二种方式：通过类型创建，不建议使用
+            会根据你配置的value从上到下走
+        -->
+        <!--
+          <constructor-arg type="java.lang.String" value="中国"/>
+         <constructor-arg type="java.lang.String" value="liwei"/>
+        -->
+
+        <!--直接通过参数名-->
+        <constructor-arg name="name" value="睿助楷"/>
+        <constructor-arg name="address" value="中国"/>
+<!--        <constructor-arg type="java.lang.String" name="name" value="优酷"/>-->
+<!--        <constructor-arg type="java.lang.String" name="address" value="地址"/>-->
+    </bean>
+    <bean id="User2" class="com.rzk.pojo.User2">
+
+    </bean>
+    <bean id="student" class="com.rzk.pojo.Student" name="Student">
+<!--        <constructor-arg name="name" value="小明"/>-->
+<!--        <constructor-arg name="age" value="18"/>-->
+<!--        <constructor-arg name="address" value="中国"/>-->
+    </bean>
+    <!--別名-->
+<!--    <alias name="student" alias="學生"/>-->
+</beans>

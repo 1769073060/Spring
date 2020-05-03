@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cglib-nodep-2.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Spring-07-proxy/src/main/java/com/rzk/aaa/cglib-nodep-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

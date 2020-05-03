@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--注册bean-->
+    <bean id="userService" class="com.rzk.service.UserServiceImpl"/>
+    <bean id="log" class="com.rzk.log.Log"/>
+    <bean id="afterlog" class="com.rzk.log.AfterLog"/>
+    <bean id="interlog" class="com.rzk.log.InterLog"/>
+    <!--方式一  使用原生Spring API接口-->
+    <!--配置aop-->
+
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;切入点 exoressionn ：表达式    execution(要执行的位置 ：  * * * * *）修饰+返回值+类名+方法名+参数&ndash;&gt;-->
+<!--           切入点 id命名                                        &lt;!&ndash;             UserServiceImpl点下面的所有方法&ndash;&gt;-->
+<!--        <aop:pointcut id="pointcut" expression="execution(* com.rzk.service.UserServiceImpl.*(..))"/>-->
+
+<!--        &lt;!&ndash;执行环绕增加    pointcut-ref="pointcut"意思是把log切入到 aop:pointcut里面的类     &ndash;&gt;-->
+<!--        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>-->
+<!--        &lt;!&ndash;                                哪个类  切到哪里&ndash;&gt;-->
+<!--        <aop:advisor advice-ref="afterlog" pointcut-ref="pointcut"/>-->
+
+<!--        <aop:advisor advice-ref="interlog" pointcut-ref="pointcut"/>-->
+<!--    </aop:config>-->
+
+    <!--方式二 ======= 自定义-->
+<!--    <bean id="diy" class="com.rzk.diy.DiyPointCut"/>-->
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;自定义切面  ref要引用的类&ndash;&gt;-->
+<!--        <aop:aspect ref="diy">-->
+<!--            &lt;!&ndash;切入点 id命名&ndash;&gt;-->
+<!--                <aop:pointcut id="pointcut" expression="execution(* com.rzk.service.UserServiceImpl.*(..))"/>-->
+<!--            &lt;!&ndash;通知&ndash;&gt;-->
+<!--            &lt;!&ndash;pointcut  引用上面的切入点id&ndash;&gt;-->
+<!--            <aop:before method="before" pointcut-ref="pointcut"/>-->
+<!--            <aop:after method="after" pointcut-ref="pointcut"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+
+
+    <!--方式三-->
+    <bean id="annotationPointCut" class="com.rzk.diy.AnnotationPointCut"/>
+    <!--开启注解支持-->
+    <aop:aspectj-autoproxy/>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

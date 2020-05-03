@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--注册bean-->
+    <bean id="userService" class="com.rzk.service.UserServiceImpl"/>
+    <bean id="log" class="com.rzk.log.Log"/>
+    <bean id="afterLog" class="com.rzk.log.AfterLog"/>
+
+    <bean id="userService" class="com.rzk.service.UserServiceImpl">
+        <property name="" ref="userService"/>
+    </bean>
+
+
+</beans>

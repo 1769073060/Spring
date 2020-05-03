@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--创建好的对象-->
+    <bean id="userDaoImpl" class="com.rzk.dao.UserDaoImpl"/>
+    <bean id="userDaoMysql" class="com.rzk.dao.UserDaoMysql"/>
+    <bean id="userOracle" class="com.rzk.dao.UserDaoOracle"/>
+    <bean id="userDaoService" class="com.rzk.dao.UserDaoService"/>
+    <!--把上面的注入进去-->
+    <bean id="UserServiceImpl" class="com.rzk.service.UserServiceImpl">
+        <property name="userDao" ref="userDaoService"/>
+    </bean>
+<!--    <bean id="UserServiceImpl" class="com.rzk.service.UserServiceImpl">-->
+<!--                <property name="userDao" ref="userDao"/>-->
+<!--&lt;!&ndash;        <property name="userDao" ref="userMysql"/>&ndash;&gt;-->
+<!--    </bean>-->
+</beans>

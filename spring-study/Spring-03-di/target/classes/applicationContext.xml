@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd"
+>
+    <!--扫描这个包下的类的注解  要在你要 加上注解  Autowired-->
+    <context:component-scan base-package="com.rzk.pojo"/>
+    <bean id="address" class="com.rzk.pojo.Address">
+        <property name="address" value="中国"/>
+     </bean>
+
+    <bean id="age" class="com.rzk.pojo.Age">
+        <property name="age" value="19"/>
+    </bean>
+
+    <bean id="Student" class="com.rzk.pojo.Student">
+        <!--第一种普通值注入-->
+        <property name="name" value="丽斯"/>
+         <!--bean注入  ref-->
+<!--        <property name="address" ref="address"/>-->
+<!--        <property name="age" ref="age"/>-->
+        <!--数组注入-->
+        <property name="books">
+            <array>
+                <value>水浒传</value>
+                <value>西游记</value>
+                <value>红楼梦</value>
+            </array>
+        </property>
+        <!--list 注入 -->
+        <property name="hobbys">
+            <list>
+                <value>看电影</value>
+                <value>看小说</value>
+            </list>
+        </property>
+        <!--Map-->
+        <property name="card">
+            <map>
+                <entry key="card" value="卡片"/>
+                <entry key="card1" value="卡片1"/>
+            </map>
+        </property>
+        <!--Set-->
+        <property name="games">
+            <set>
+                <value>lol</value>
+                <value>看门狗</value>
+                <value>刺客信条</value>
+            </set>
+        </property>
+        <!--null-->
+        <property name="wife">
+            <null/>
+        </property>
+        <!--properties-->
+        <property name="info">
+            <props>
+                <prop key="driver">连接</prop>
+                <prop key="root">账号</prop>
+                <prop key="pwd">密码</prop>
+            </props>
+        </property>
+     </bean>
+</beans>

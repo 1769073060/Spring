@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--扫描这个包下的类的注解  要在你要 加上注解  Autowired-->
+    <context:component-scan base-package="com.rzk.pojo"/>
+    <bean id="add" class="com.rzk.pojo.Address">
+        <property name="address" value="中国社区"/>
+    </bean>
+
+    <bean id="age" class="com.rzk.pojo.Age">
+        <property name="age" value="18"/>
+    </bean>
+
+    <bean id="student" class="com.rzk.pojo.Student">
+        <!--第一种普通值注入-->
+        <property name="name" value="小明"/>
+        <!--bean注入  ref-->
+        <!--        <property name="address" ref="address"/>-->
+        <!--        <property name="age" ref="age"/>-->
+
+        <!--数组注入-->
+        <property name="books">
+            <array>
+                <value>西游记1</value>
+                <value>西游记2</value>
+                <value>西游记3</value>
+                <value>西游记4</value>
+            </array>
+        </property>
+        <!--list 注入 -->
+        <property name="hobbys">
+            <list>
+                <value>看电影</value>
+                <value>看电影</value>
+                <value>看电影</value>
+            </list>
+        </property>
+        <!--Map-->
+        <property name="card">
+            <map>
+                <entry value="1" key="A"/>
+                <entry value="2" key="B"/>
+                <entry value="3" key="C"/>
+            </map>
+        </property>
+        <!--Set-->
+        <property name="games">
+            <set>
+                <value>lol</value>
+                <value>开门狗</value>
+                <value>刺客信条</value>
+            </set>
+        </property>
+        <!--null-->
+        <property name="wife">
+            <null/>
+        </property>
+        <!--properties-->
+        <property name="info">
+            <props>
+                <prop key="driver">连接</prop>
+                <prop key="root">用户</prop>
+                <prop key="pwd">密码</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb3ac26b-26e9-4812-8025-5bde77795f64" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="BaseDao" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Maven" />
+        <option name="userSettingsFile" value="D:\Maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1anHq9lRpZpUxpzC2fNpCTJ91WH" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/我的文档/桌面/新建文件夹 (3)/Test/gym_xiaozu" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA项目\spring-study\spring-09-transaction\src\main\resources" />
+      <recent name="D:\IDEA项目\spring-study\Spring-07-proxy\src\main\java\com\rzk\aaa" />
+      <recent name="D:\IDEA项目\spring-study\Spring-07-proxy\src\main\java\com\rzk\dome3" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rzk.pojo" />
+      <recent name="com.rzk.demo5" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA项目\spring-study\Mybatis-Spring1\src\main\java\com\rzk\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MyTest.test">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rzk.aaacgrb.Client" />
+      <module name="Spring-07-proxy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rzk.aaacgrb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rzk.aaa.Client" />
+      <module name="Spring-07-proxy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rzk.aaa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <module name="spring-09-transaction" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rzk.mapper.UserMapperImpl" />
+      <module name="Mybatis-Spring1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rzk.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-Spring1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyTest.test" />
+        <item itemvalue="Application.UserMapperImpl" />
+        <item itemvalue="Application.MyTest (2)" />
+        <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.Client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb3ac26b-26e9-4812-8025-5bde77795f64" name="Default Changelist" comment="" />
+      <created>1585070611644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585070611644</updated>
+      <workItem from="1585070616760" duration="452000" />
+      <workItem from="1585099985987" duration="7196000" />
+      <workItem from="1585125752002" duration="489000" />
+      <workItem from="1585157541498" duration="7380000" />
+      <workItem from="1585232895818" duration="599000" />
+      <workItem from="1585236514639" duration="2077000" />
+      <workItem from="1585297354774" duration="486000" />
+      <workItem from="1585333569183" duration="3104000" />
+      <workItem from="1585368284916" duration="18000" />
+      <workItem from="1585368655286" duration="4761000" />
+      <workItem from="1585381062054" duration="12607000" />
+      <workItem from="1585451195956" duration="16304000" />
+      <workItem from="1585487932305" duration="2647000" />
+      <workItem from="1585490825711" duration="8344000" />
+      <workItem from="1585538539504" duration="3276000" />
+      <workItem from="1585576408095" duration="10000" />
+      <workItem from="1585579859818" duration="1198000" />
+      <workItem from="1585582823912" duration="706000" />
+      <workItem from="1585618274521" duration="20448000" />
+      <workItem from="1585706831674" duration="1076000" />
+      <workItem from="1585828974810" duration="32713000" />
+      <workItem from="1586056213447" duration="51786000" />
+      <workItem from="1586192616361" duration="32842000" />
+      <workItem from="1586274281804" duration="9783000" />
+      <workItem from="1587364627751" duration="3178000" />
+      <workItem from="1587997641962" duration="2988000" />
+      <workItem from="1588130522689" duration="2396000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="372" key="#Project_Structure" timestamp="1587364862842">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="0" y="372" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1587364862842" />
+    <state x="616" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588181607358">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588181607358" />
+    <state x="1530" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1587367749855">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1530" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1587367749855" />
+    <state x="944" y="349" key="FileChooserDialogImpl" timestamp="1588062849339">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="944" y="349" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1588062849339" />
+    <state width="1566" height="455" key="GridCell.Tab.0.bottom" timestamp="1587368103382">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1566" height="455" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1587368103382" />
+    <state width="1566" height="455" key="GridCell.Tab.0.center" timestamp="1587368103381">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1566" height="455" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1587368103381" />
+    <state width="1566" height="455" key="GridCell.Tab.0.left" timestamp="1587368103381">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1566" height="455" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1587368103381" />
+    <state width="1566" height="455" key="GridCell.Tab.0.right" timestamp="1587368103381">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1566" height="455" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1587368103381" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-01-ioc1/src/main/java/com/rzk/dao/UserDaoImpl.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
